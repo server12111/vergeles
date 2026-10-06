@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 import { categories, productsByCategory, products as allProducts, type CategorySlug, type Product } from "@/lib/catalog";
 import { ProductCard } from "./product-card";
 import { Reveal } from "./reveal";
@@ -30,16 +33,15 @@ function wideSlots(n: number, cols: number, extra: number) {
 }
 
 export function CatalogView({
-  products,
+  products: source,
   active,
-  sort,
-  basePath,
 }: {
   products: Product[];
   active?: CategorySlug;
-  sort: SortKey;
-  basePath: string;
 }) {
+  const [sort, setSort] = useState<SortKey>("default");
+  const products = sortProducts(source, sort);
+
   // Mobile: 2 columns, desktop: 3. Larger lists get a few wide editorial cards for rhythm.
   const n = products.length;
   const mobileWide = wideSlots(n, 2, n >= 6 ? 2 : 0);
@@ -77,14 +79,14 @@ export function CatalogView({
           <ul className="hidden shrink-0 items-center gap-4 text-[12px] lg:flex" aria-label="Сортировка">
             {sorts.map((s) => (
               <li key={s.key}>
-                <Link
-                  href={s.key === "default" ? basePath : `${basePath}?sort=${s.key}`}
-                  scroll={false}
-                  className={sort === s.key ? "text-ink" : "text-muted hover:text-ink"}
-                  aria-current={sort === s.key ? "true" : undefined}
+                <button
+                  type="button"
+                  onClick={() => setSort(s.key)}
+                  className={`py-4 ${sort === s.key ? "text-ink" : "text-muted hover:text-ink"}`}
+                  aria-pressed={sort === s.key}
                 >
                   {s.label}
-                </Link>
+                </button>
               </li>
             ))}
           </ul>
@@ -93,14 +95,15 @@ export function CatalogView({
 
       <div className="mt-4 flex gap-4 overflow-x-auto text-[12px] lg:hidden">
         {sorts.map((s) => (
-          <Link
+          <button
             key={s.key}
-            href={s.key === "default" ? basePath : `${basePath}?sort=${s.key}`}
-            scroll={false}
+            type="button"
+            onClick={() => setSort(s.key)}
+            aria-pressed={sort === s.key}
             className={`shrink-0 py-2 ${sort === s.key ? "text-ink underline underline-offset-4" : "text-muted"}`}
           >
             {s.label}
-          </Link>
+          </button>
         ))}
       </div>
 

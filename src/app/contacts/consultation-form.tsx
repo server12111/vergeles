@@ -1,12 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getProduct } from "@/lib/catalog";
 
 const topics = ["Подбор мебели", "Расчёт проекта", "Образцы материалов", "Доставка в Европу", "Сотрудничество с дизайнерами"];
 
-export function ConsultationForm({ product }: { product?: string }) {
+export function ConsultationForm() {
   const [sent, setSent] = useState(false);
   const [topic, setTopic] = useState(topics[0]);
+  const [message, setMessage] = useState("");
+
+  // Pre-fill when arriving from a product page (?product=slug).
+  useEffect(() => {
+    const slug = new URLSearchParams(window.location.search).get("product");
+    const product = slug ? getProduct(slug) : undefined;
+    if (product) setMessage(`Интересует ${product.name}. `);
+  }, []);
 
   if (sent) {
     return (
@@ -58,7 +67,8 @@ export function ConsultationForm({ product }: { product?: string }) {
         <textarea
           id="c-msg"
           rows={3}
-          defaultValue={product ? `Интересует ${product}. ` : ""}
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           placeholder="Расскажите о пространстве: площадь, стиль, сроки"
           className="field resize-none"
         />

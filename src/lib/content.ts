@@ -1,6 +1,6 @@
 export const site = {
   name: "VERGELES",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://vergeles.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://server12111.github.io/vergeles",
   description:
     "VERGELES — современная мебель из натуральных материалов. Диваны, кресла, столы, стулья, кровати и системы хранения с доставкой по России и Европе.",
   email: "studio@vergeles.com",

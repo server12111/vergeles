@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { CatalogView, sortProducts, type SortKey } from "@/components/catalog-view";
+import { CatalogView } from "@/components/catalog-view";
 import { Breadcrumbs } from "@/components/page-intro";
 import { CtaSection } from "@/components/cta-section";
 import { categories, getCategory, plural, productsByCategory, type CategorySlug } from "@/lib/catalog";
@@ -24,20 +24,10 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   };
 }
 
-const valid: SortKey[] = ["default", "price-asc", "price-desc", "new"];
-
-export default async function CategoryPage({
-  params,
-  searchParams,
-}: {
-  params: Params;
-  searchParams: Promise<{ sort?: string }>;
-}) {
+export default async function CategoryPage({ params }: { params: Params }) {
   const { category } = await params;
-  const { sort: raw } = await searchParams;
   const c = getCategory(category);
   if (!c) notFound();
-  const sort = valid.includes(raw as SortKey) ? (raw as SortKey) : "default";
   const list = productsByCategory(c.slug as CategorySlug);
 
   return (
@@ -65,7 +55,7 @@ export default async function CategoryPage({
           </div>
         </div>
       </section>
-      <CatalogView products={sortProducts(list, sort)} active={c.slug} sort={sort} basePath={`/catalog/${c.slug}`} />
+      <CatalogView products={list} active={c.slug} />
       <CtaSection />
     </>
   );

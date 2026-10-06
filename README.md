@@ -11,11 +11,25 @@ npm run build      # production-сборка
 npm run typecheck
 ```
 
-## Деплой на Vercel
+## Деплой
 
-1. Залить репозиторий на GitHub.
-2. Vercel → **Add New Project** → импортировать репозиторий. Настройки по умолчанию (Framework: Next.js).
-3. В **Environment Variables** указать `NEXT_PUBLIC_SITE_URL` — боевой домен (`https://vergeles.com`). Он используется в canonical, sitemap, robots, OG и JSON-LD.
+Сайт собирается как статический (`output: "export"`, папка `out/`) и публикуется на **GitHub Pages**
+из ветки `gh-pages`. Чтобы обновить сайт после изменений:
+
+```bash
+npm run deploy
+```
+
+Адрес: https://server12111.github.io/vergeles/
+
+Локальная проверка сборки с тем же путём, что на Pages:
+
+```bash
+NEXT_PUBLIC_BASE_PATH=/vergeles npm run build
+```
+
+После `next build` скрипт `scripts/flatten-rsc.mjs` дублирует служебные файлы роутера под плоскими
+именами — без этого на статическом хостинге клиентские переходы получают 404.
 
 ## Структура
 
@@ -23,7 +37,7 @@ npm run typecheck
 src/
   app/                 маршруты: /, /catalog, /catalog/[category], /product/[slug],
                        /collections, /about, /delivery, /contacts, /cart, /wishlist, /legal/[doc]
-                       + sitemap.ts, robots.ts, manifest.ts, icon.svg, opengraph-image.tsx
+                       + sitemap.ts, robots.ts, manifest.ts, icon.svg (OG-картинка — public/og.png)
   components/
     home/              секции главной
     product/           галерея и блок покупки

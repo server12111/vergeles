@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageIntro } from "@/components/page-intro";
-import { getProduct } from "@/lib/catalog";
 import { site } from "@/lib/content";
 import { ConsultationForm } from "./consultation-form";
 
@@ -11,13 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contacts" },
 };
 
-export default async function ContactsPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ product?: string }>;
-}) {
-  const { product: slug } = await searchParams;
-  const product = slug ? getProduct(slug) : undefined;
+export default function ContactsPage() {
 
   const channels = [
     { label: "Телефон", value: site.phone, href: site.phoneHref },
@@ -84,7 +77,7 @@ export default async function ContactsPage({
             </p>
           </div>
           <div className="md:col-span-7 md:col-start-6">
-            <ConsultationForm product={product?.name} />
+            <ConsultationForm />
           </div>
         </div>
       </section>

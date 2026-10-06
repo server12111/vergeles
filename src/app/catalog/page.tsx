@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CatalogView, sortProducts, type SortKey } from "@/components/catalog-view";
+import { CatalogView } from "@/components/catalog-view";
 import { PageIntro } from "@/components/page-intro";
 import { CtaSection } from "@/components/cta-section";
 import { products } from "@/lib/catalog";
@@ -11,16 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/catalog" },
 };
 
-const valid: SortKey[] = ["default", "price-asc", "price-desc", "new"];
-
-export default async function CatalogPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ sort?: string }>;
-}) {
-  const { sort: raw } = await searchParams;
-  const sort = valid.includes(raw as SortKey) ? (raw as SortKey) : "default";
-
+export default function CatalogPage() {
   return (
     <>
       <PageIntro crumbs={[{ label: "Каталог" }]} eyebrow="12 предметов · 6 категорий" title="Мебель">
@@ -29,7 +20,7 @@ export default async function CatalogPage({
           изменить — менеджер подготовит расчёт за один рабочий день.
         </p>
       </PageIntro>
-      <CatalogView products={sortProducts(products, sort)} sort={sort} basePath="/catalog" />
+      <CatalogView products={products} />
       <CtaSection />
     </>
   );
