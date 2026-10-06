@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /cart
+Disallow: /wishlist
+
+Sitemap: https://server12111.github.io/vergeles/sitemap.xml

@@ -1,0 +1,39 @@
+1:"$Sreact.fragment"
+2:I[22016,["/vergeles/_next/static/chunks/2yd53gmc-zmbu.js","/vergeles/_next/static/chunks/1npy10ln3svxi.js"],""]
+3:I[97367,["/vergeles/_next/static/chunks/2yd53gmc-zmbu.js","/vergeles/_next/static/chunks/1npy10ln3svxi.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[97367,["/vergeles/_next/static/chunks/2yd53gmc-zmbu.js","/vergeles/_next/static/chunks/1npy10ln3svxi.js"],"ViewportBoundary"]
+9:I[97367,["/vergeles/_next/static/chunks/2yd53gmc-zmbu.js","/vergeles/_next/static/chunks/1npy10ln3svxi.js"],"MetadataBoundary"]
+7:X
+1c:X
+1c:C
+0:{"buildId":"vvMYJoFLwX1kuI-NzRxmV","data":[{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"container-x pb-24 pt-6 md:pb-36 md:pt-10","children":[["$","nav",null,{"aria-label":"Навигационная цепочка","className":"text-[12px] text-muted","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-x-2 gap-y-1","children":[["$","li",null,{"children":["$","$L2",null,{"href":"/","className":"hover:text-ink","children":"Главная"}]}],[["$","li","Доставка и возврат",{"className":"flex items-center gap-2","children":[["$","span",null,{"aria-hidden":true,"children":"/"}],["$","span",null,{"aria-current":"page","className":"text-ink","children":"Доставка и возврат"}]]}]]]}]}],["$","div",null,{"className":"mt-10 grid gap-10 md:mt-16 md:grid-cols-12 md:gap-6","children":[["$","header",null,{"className":"md:col-span-4","children":[["$","h1",null,{"className":"h-sub","children":"Доставка и возврат"}],["$","p",null,{"className":"mt-4 text-[12px] text-muted","children":["Редакция от ","12 марта 2026"]}]]}],["$","div",null,{"className":"max-w-2xl md:col-span-7 md:col-start-6","children":[["$","section","1. Доставка",{"className":"border-t border-line py-8","children":[["$","h2",null,{"className":"text-[15px] font-medium","children":"1. Доставка"}],[["$","p","Москва и Санкт-Петербург — бес",{"className":"mt-3 text-[15px] leading-[1.7] text-graphite","children":"Москва и Санкт-Петербург — бесплатно, с подъёмом и сборкой. Другие города России и Европы — по тарифам, которые рассчитывает менеджер или калькулятор на странице «Доставка»."}]]]}],["$","section","2. Возврат",{"className":"border-t border-line py-8","children":[["$","h2",null,{"className":"text-[15px] font-medium","children":"2. Возврат"}],[["$","p","Предметы стандартной комплекта",{"className":"mt-3 text-[15px] leading-[1.7] text-graphite","children":"Предметы стандартной комплектации можно вернуть в течение 14 дней после доставки, если они не были в использовании. Стоимость обратной доставки оплачивает покупатель."}],["$","p","Мебель, изготовленная по индив",{"className":"mt-3 text-[15px] leading-[1.7] text-graphite","children":"Мебель, изготовленная по индивидуальным размерам или в нестандартной обивке, возврату не подлежит, кроме случаев производственного брака."}]]]}],["$","section","3. Гарантия",{"className":"border-t border-line py-8","children":[["$","h2",null,{"className":"text-[15px] font-medium","children":"3. Гарантия"}],[["$","p","2 года на каркас, механизмы и ",{"className":"mt-3 text-[15px] leading-[1.7] text-graphite","children":"2 года на каркас, механизмы и фурнитуру, 12 месяцев на обивку. Гарантийный ремонт выполняется на месте или в мастерской за наш счёт."}]]]}]]}]]}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#f5f3ef"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Доставка и возврат — VERGELES"}],["$","meta","1",{"name":"description","content":"VERGELES — современная мебель из натуральных материалов. Диваны, кресла, столы, стулья, кровати и системы хранения с доставкой по России и Европе."}],["$","meta","2",{"name":"application-name","content":"VERGELES"}],["$","link","3",{"rel":"manifest","href":"/vergeles/manifest.webmanifest"}],["$","meta","4",{"name":"keywords","content":"дизайнерская мебель,премиальная мебель,мебель из дуба,диваны,кресла,обеденные столы,мебель под заказ,VERGELES"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","link","6",{"rel":"canonical","href":"https://server12111.github.io/vergeles/legal/returns/"}],["$","meta","7",{"property":"og:title","content":"VERGELES — Furniture for modern living"}],["$","meta","8",{"property":"og:description","content":"VERGELES — современная мебель из натуральных материалов. Диваны, кресла, столы, стулья, кровати и системы хранения с доставкой по России и Европе."}],"$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17"]}]}]}],"$L18"]}],"isPartial":"$@19","staleTime":"$7","varyParams":null},{"rsc":"$L1a","isPartial":"$@1b","staleTime":"$7","varyParams":"$1c"},{"rsc":"$L1d","isPartial":"$@1e","staleTime":"$7","varyParams":"$1c"}],"isUpgradeableISRFallback":false,"a":"$@1f","rootVaryParams":null,"needsRuntimeRequest":"$@20"}
+21:I[27201,["/vergeles/_next/static/chunks/2yd53gmc-zmbu.js","/vergeles/_next/static/chunks/1npy10ln3svxi.js"],"IconMark"]
+22:I[39756,["/vergeles/_next/static/chunks/2yd53gmc-zmbu.js","/vergeles/_next/static/chunks/1npy10ln3svxi.js"],"default"]
+23:I[37457,["/vergeles/_next/static/chunks/2yd53gmc-zmbu.js","/vergeles/_next/static/chunks/1npy10ln3svxi.js"],"default"]
+5:null
+a:["$","meta","9",{"property":"og:url","content":"https://server12111.github.io/vergeles/"}]
+b:["$","meta","10",{"property":"og:site_name","content":"VERGELES"}]
+c:["$","meta","11",{"property":"og:locale","content":"ru_RU"}]
+d:["$","meta","12",{"property":"og:image","content":"https://server12111.github.io/vergeles/og.png"}]
+e:["$","meta","13",{"property":"og:image:width","content":"1200"}]
+f:["$","meta","14",{"property":"og:image:height","content":"630"}]
+10:["$","meta","15",{"property":"og:image:alt","content":"VERGELES — Furniture for modern living"}]
+11:["$","meta","16",{"property":"og:type","content":"website"}]
+12:["$","meta","17",{"name":"twitter:card","content":"summary_large_image"}]
+13:["$","meta","18",{"name":"twitter:title","content":"VERGELES — Furniture for modern living"}]
+14:["$","meta","19",{"name":"twitter:description","content":"VERGELES — современная мебель из натуральных материалов. Диваны, кресла, столы, стулья, кровати и системы хранения с доставкой по России и Европе."}]
+15:["$","meta","20",{"name":"twitter:image","content":"https://server12111.github.io/vergeles/og.png"}]
+16:["$","link","21",{"rel":"icon","href":"/vergeles/icon.svg?icon.28wpj_656w3wz.svg","sizes":"any","type":"image/svg+xml"}]
+17:["$","$L21","22",{}]
+18:["$","meta",null,{"name":"next-size-adjust","content":""}]
+1a:["$","$1","c",{"children":[null,["$","$L22",null,{"parallelRouterKey":"children","template":["$","$L23",null,{}]}]]}]
+1d:["$","$1","c",{"children":[null,["$","$L22",null,{"parallelRouterKey":"children","template":["$","$L23",null,{}]}]]}]
+20:true
+7:300
+7:C
+1f:0
+19:"$undefined"
+1b:"$undefined"
+1e:"$undefined"
+6:"$undefined"
